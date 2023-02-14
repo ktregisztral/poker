@@ -26,7 +26,7 @@ class Card extends HTMLElement {
         let tisztek = ['J', 'Q', 'K'];
         if (ertek == 1) {ertek = 'A'}
         else {
-            if (ertek > 10) {ertek = tisztek[-11]}
+            if (ertek > 10) {ertek = tisztek[ertek-11]}
         };
         number.innerHTML = ertek;
 
